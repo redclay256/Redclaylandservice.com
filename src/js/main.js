@@ -178,6 +178,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       }
     });
   });
+
+  function openLinkedAnswer() {
+    if (!window.location.hash) return;
+    const item = document.getElementById(window.location.hash.slice(1));
+    const question = item?.querySelector('.faq-question');
+    if (question?.getAttribute('aria-expanded') === 'false') question.click();
+  }
+
+  openLinkedAnswer();
+  window.addEventListener('hashchange', openLinkedAnswer);
 })();
 
 
