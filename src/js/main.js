@@ -228,7 +228,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             <div class="form-group"><label for="lead-service">Service Needed</label>
               <select id="lead-service" name="service"><option value="">Select a service…</option>
                 <option>Forestry Mulching</option><option>Brush Clearing</option><option>Fire Mitigation</option>
-                <option>Right-of-Way Clearing</option><option>Multiple / Not Sure</option></select></div>
+                <option>Right-of-Way Clearing</option><option>Pond &amp; Creek Bank Cleanup</option><option>Multiple / Not Sure</option></select></div>
           </div>
           <div class="form-group"><label for="lead-msg">Project Details (optional)</label>
             <textarea id="lead-msg" name="message" rows="3" placeholder="Acreage, current condition, timeline…"></textarea></div>
